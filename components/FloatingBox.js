@@ -2,6 +2,7 @@ import React from 'react';
 import {
   VrButton,
   Box,
+  Text,
   View,
 } from 'react-vr';
 export default class FloatingBox extends React.Component {
