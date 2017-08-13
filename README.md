@@ -1,7 +1,7 @@
-### NumberGuessVR
+### NumberGuessingVR
 
 
-This is an in progress game using React VR for guessing a number done as practice! I am still learning how React works, so this is meant to be a very basic and simple game.
+This is an in progress game using React VR for guessing a number done as practice! I am still learning how React works, so this is meant to be a very basic and simple game. The title might change, this is really just to practice programming with VR.
 
 Please check back soon for more updates!
 
