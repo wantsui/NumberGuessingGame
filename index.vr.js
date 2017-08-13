@@ -16,26 +16,45 @@ export default class NumberGuessingGame extends React.Component {
     super(props)
     this.state = {
         buttonPressed: "",
-        randomNumber: Math.round(Math.random()*4)+1,
+        randomNumber: Math.round(Math.random() * 4) + 1,
         win: false,
+        resultMessage: "",
     }
     this.updateButton = this.updateButton.bind(this)
+    this.updateGameStatus = this.updateGameStatus.bind(this)
   }
 
   updateButton(buttonString) {
     this.setState({buttonPressed: buttonString})
   }
 
+  updateGameStatus() {
+    if(parseInt(this.state.buttonPressed) === this.state.randomNumber){
+      this.setState({win: true})
+      this.setState({resultMessage: "You win! Refresh the page for a new game!"})
+
+    }
+    else {
+      this.setState({resultMessage: "Wrong guess! Here's a clue: " + (this.state.buttonPressed - this.state.randomNumber)})
+    }
+  }
+
   render() {
+    let indexProps = { buttonTitle: this.state.buttonPressed,
+                            updateButton: this.updateButton,
+                            randomNumber: this.state.randomNumber,
+                            resultMessage: this.state.resultMessage,
+                            updateGameStatus: this.updateGameStatus,
+                          }
     return (
       <View>
-        <Title/>
-        <Result randomNumber={this.state.randomNumber}/>
-        <UserGuess buttonTitle={this.state.buttonPressed}/>
-        <NumberOptions updateButton={this.updateButton}/>
+        <Title indexProps={indexProps}/>
+        <NumberOptions indexProps={indexProps}/>
+        <UserGuess indexProps={indexProps}/>
+        <Result indexProps={indexProps}/>
       </View>
     );
-  }
+  }pare
 };
 
 AppRegistry.registerComponent('NumberGuessingGame', () => NumberGuessingGame);

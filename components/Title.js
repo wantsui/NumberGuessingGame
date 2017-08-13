@@ -7,8 +7,8 @@ import {
 export default class Title extends React.Component {
   render() {
     return(
-      <View style={{transform: [{translate: [1, -1, -1]}],
-                    layoutOrigin: [1, 9]
+      <View style={{transform: [{translate: [1, 1, -1]}],
+                    layoutOrigin: [1, -5]
                   }}>
         <Text style={{ color:"white",
                     }}>

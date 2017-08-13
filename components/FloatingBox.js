@@ -5,6 +5,7 @@ import {
   Text,
   View,
 } from 'react-vr';
+
 export default class FloatingBox extends React.Component {
   render() {
     let translateX = this.props.translateX
@@ -12,7 +13,7 @@ export default class FloatingBox extends React.Component {
     let translateZ = this.props.translateZ
     let boxColor = this.props.boxColor
     let comment = this.props.comment
-    let updateButton = this.props.updateButton
+    let updateButton = this.props.indexProps.updateButton
 
     return(
       <View>

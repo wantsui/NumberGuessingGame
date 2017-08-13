@@ -5,14 +5,15 @@ import {
 } from 'react-vr';
 export default class Result extends React.Component {
   render() {
-    let randomNumber = this.props.randomNumber
+    let resultMessage = this.props.indexProps.resultMessage
+
     return(
       <View style={{transform: [{translate: [1, -1, -1]}],
-                    layoutOrigin: [.8, 7]
+                    layoutOrigin: [1, 17]
                   }}>
         <Text style={{ color:"white",
                     }}>
-                    Correct Number: {randomNumber}
+                    {resultMessage}
         </Text>
       </View>
     );
