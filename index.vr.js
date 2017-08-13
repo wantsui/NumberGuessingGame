@@ -7,12 +7,14 @@ import {
   View,
 } from 'react-vr';
 import NumberOptions from './components/NumberOptions.js';
-
+import Title from './components/Title.js';
 
 export default class NumberGuessingGame extends React.Component {
   render() {
     return (
-    <NumberOptions/>
+      <View>
+        <NumberOptions/>
+      </View>
     );
   }
 };
