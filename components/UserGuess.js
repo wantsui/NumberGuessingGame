@@ -4,15 +4,16 @@ import {
   Text,
   View,
 } from 'react-vr';
-export default class Title extends React.Component {
+export default class UserGuess extends React.Component {
   render() {
+    let buttonTitle = this.props.buttonTitle
     return(
       <View style={{transform: [{translate: [1, -1, -1]}],
-                    layoutOrigin: [1, 9]
+                    layoutOrigin: [.8, 9]
                   }}>
         <Text style={{ color:"white",
                     }}>
-                    Welcome to the Number Guessing Game!
+                    You guessed: {buttonTitle}
         </Text>
       </View>
     );

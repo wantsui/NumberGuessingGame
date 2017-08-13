@@ -8,12 +8,13 @@ import {
 } from 'react-vr';
 import NumberOptions from './components/NumberOptions.js';
 import Title from './components/Title.js';
+import UserGuess from './components/UserGuess.js';
 
 export default class NumberGuessingGame extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-        buttonPressed = "",
+        buttonPressed: "",
     }
     this.updateButton = this.updateButton.bind(this)
   }
@@ -26,7 +27,8 @@ export default class NumberGuessingGame extends React.Component {
     return (
       <View>
         <Title/>
-        <NumberOptions/>
+        <UserGuess buttonTitle={this.state.buttonPressed}/>
+        <NumberOptions updateButton={this.updateButton}/>
       </View>
     );
   }

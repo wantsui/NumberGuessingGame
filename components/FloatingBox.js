@@ -12,10 +12,12 @@ export default class FloatingBox extends React.Component {
     let translateZ = this.props.translateZ
     let boxColor = this.props.boxColor
     let comment = this.props.comment
+    let updateButton = this.props.updateButton
+
     return(
       <View style={{transform: [{translate: [translateX, translateY, translateZ]}]
                   }}>
-          <VrButton onClick={() => console.log(comment)}>
+          <VrButton onClick={() => updateButton(comment)}>
             <Box
               dimHeight={.5}
               dimWidth={.5}
