@@ -5,7 +5,7 @@ This is an in progress game using React VR for guessing a number done as practic
 
 Please check back soon for more updates!
 
-** To play: **
+#### To play:
 
 ![gameplay](/images/gameplay.jpg)
 
@@ -17,7 +17,7 @@ Please check back soon for more updates!
 
 And that's it! After you guess correctly, a new random number awaits.
 
-** Resources: **
+#### Resources:
 
 1) React VR (GitHub)
  - https://github.com/facebook/react-vr
