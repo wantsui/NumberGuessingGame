@@ -5,7 +5,9 @@ This is an in progress game using React VR for guessing a number done as practic
 
 Please check back soon for more updates!
 
-**To play:**
+** To play: **
+
+![gameplay](/images/gameplay.jpg)
 
 1) Click on a floating box.
 
@@ -13,9 +15,9 @@ Please check back soon for more updates!
 
 3) If this is your guess, press the text.
 
-![gameplay](/images/gameplay.jpg)
+And that's it! After you guess correctly, a new random number awaits.
 
-**Resources: **
+** Resources: **
 
 1) React VR (GitHub)
  - https://github.com/facebook/react-vr
