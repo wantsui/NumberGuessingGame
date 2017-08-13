@@ -12,7 +12,7 @@ export default class Title extends React.Component {
                   }}>
         <Text style={{ color:"white",
                     }}>
-                    Welcome to a Number Guessing Game!
+                    Welcome to NumberGuessingVR!!!!!!!!
         </Text>
       </View>
     );
