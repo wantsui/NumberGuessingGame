@@ -15,18 +15,28 @@ export default class FloatingBox extends React.Component {
     let updateButton = this.props.updateButton
 
     return(
-      <View style={{transform: [{translate: [translateX, translateY, translateZ]}]
+      <View>
+      <View style={{transform: [{translate: [translateX + .9, translateY, translateZ + .4]}]
                   }}>
-          <VrButton onClick={() => updateButton(comment)}>
-            <Box
-              dimHeight={.5}
-              dimWidth={.5}
-              dimDepth={.5}
-              style={{
-                color: boxColor,
-              }}
-            />
-          </VrButton>
+        <Text style={{ color:"blue",
+                      fontSize: .2,
+                    }}>
+                    {comment}
+        </Text>
+      </View>
+        <View style={{transform: [{translate: [translateX, translateY, translateZ]}]
+                    }}>
+            <VrButton onClick={() => updateButton(comment)}>
+              <Box
+                dimHeight={.7}
+                dimWidth={.7}
+                dimDepth={.7}
+                style={{
+                  color: boxColor,
+                }}
+              />
+            </VrButton>
+        </View>
       </View>
     );
   }
