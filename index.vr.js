@@ -31,11 +31,11 @@ export default class NumberGuessingGame extends React.Component {
   updateGameStatus() {
     if(parseInt(this.state.buttonPressed) === this.state.randomNumber){
       this.setState({win: true})
-      this.setState({resultMessage: "You win! Refresh the page for a new game!"})
-
+      this.setState({resultMessage: "You win! Time for another game!"})
+      this.setState({randomNumber: Math.round(Math.random() * 4) + 1})
     }
     else {
-      this.setState({resultMessage: "Wrong guess! Here's a clue: " + (this.state.buttonPressed - this.state.randomNumber)})
+      this.setState({resultMessage: "Wrong guess! Here's a clue: " + Math.abs(this.state.buttonPressed - this.state.randomNumber)})
     }
   }
 
