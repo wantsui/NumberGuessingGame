@@ -7,13 +7,14 @@ import {
 import FloatingBox from './FloatingBox.js'
 export default class NumberOptions extends React.Component {
   render() {
+    let indexProps = this.props.indexProps
     return(
       <View>
-        <FloatingBox layoutX={3} layoutY={-1} boxColor={"lavender"} comment={"Box 1"} translateZ={2}/>
-        <FloatingBox layoutX={3} layoutY={-1} boxColor={"snow"} comment={"Box 2"} translateZ={1}/>
-        <FloatingBox layoutX={3} layoutY={-1} boxColor={"green"} comment={"Box 3"} translateZ={0}/>
-        <FloatingBox layoutX={3} layoutY={-1} boxColor={"pink"} comment={"Box 4"} translateZ={-1}/>
-        <FloatingBox layoutX={2} layoutY={-2} boxColor={"lightcyan"} comment={"Box 5"} translateZ={-2}/>
+        <FloatingBox indexProps={indexProps} boxColor={"lavender"} comment={"1"} translateX={-5} translateY={3} translateZ={-3}/>
+        <FloatingBox indexProps={indexProps} boxColor={"pink"} comment={"2"} translateX={-3} translateY={3} translateZ={-3}/>
+        <FloatingBox indexProps={indexProps} boxColor={"silver"} comment={"3"} translateX={-1} translateY={3} translateZ={-3}/>
+        <FloatingBox indexProps={indexProps} boxColor={"skyblue"} comment={"4"} translateX={1} translateY={3} translateZ={-3}/>
+        <FloatingBox indexProps={indexProps} boxColor={"mediumpurple"} comment={"5"} translateX={3} translateY={3} translateZ={-3}/>
       </View>
     );
   }
