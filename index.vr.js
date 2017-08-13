@@ -11,7 +11,7 @@ import Title from './components/Title.js';
 import UserGuess from './components/UserGuess.js';
 import Result from './components/Result.js';
 
-export default class NumberGuessingGame extends React.Component {
+export default class NumberGuessingVR extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -57,4 +57,4 @@ export default class NumberGuessingGame extends React.Component {
   }pare
 };
 
-AppRegistry.registerComponent('NumberGuessingGame', () => NumberGuessingGame);
+AppRegistry.registerComponent('NumberGuessingVR', () => NumberGuessingVR);
