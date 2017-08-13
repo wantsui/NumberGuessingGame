@@ -22,3 +22,6 @@ Please check back soon for more updates!
 
 2) React VR (Documentation)
   - https://facebook.github.io/react-vr/
+
+3) React (Documentation)
+  - https://facebook.github.io/react/
