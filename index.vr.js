@@ -54,7 +54,7 @@ export default class NumberGuessingVR extends React.Component {
         <Result indexProps={indexProps}/>
       </View>
     );
-  }pare
+  }
 };
 
 AppRegistry.registerComponent('NumberGuessingVR', () => NumberGuessingVR);

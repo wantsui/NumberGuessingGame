@@ -12,7 +12,7 @@ export default class UserGuess extends React.Component {
 
     return(
       <View style={{transform: [{translate: [1, -1, -1]}],
-                    layoutOrigin: [.8, 20]
+                    layoutOrigin: [.7,18]
                   }}>
         <VrButton onClick={() => updateGameStatus()}>
           <Text style={{ color:"white",
