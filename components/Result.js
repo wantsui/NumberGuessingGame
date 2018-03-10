@@ -9,7 +9,7 @@ export default class Result extends React.Component {
 
     return(
       <View style={{transform: [{translate: [1, -1, -1]}],
-                    layoutOrigin: [1, 17]
+                    layoutOrigin: [1, 20]
                   }}>
         <Text style={{ color:"white",
                     }}>
